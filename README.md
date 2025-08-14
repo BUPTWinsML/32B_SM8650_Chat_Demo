@@ -4,6 +4,37 @@
 
 This application demonstrates a chat demo on the SM8650 platform, leveraging local model inference. It features a seamless user experience built with Flutter and powered by the `libllama.so` dynamic library for backend inference. The project provides an APK installer, a demo video, and clear UI screenshots for easy understanding.
 
+## Project demo
+
+
+<!-- Use 'width' and let 'height' adjust automatically -->
+<table>
+    <tr>
+        <td>Main Interface</td>
+        <td>Model Download Page</td>
+    </tr>
+    <tr>
+        <td>
+            <img src="assets/images/Main_Interface.jpg" alt="Main Interface" width="300">
+        </td>
+        <td>
+            <img src="assets/images/Model_download_page.jpg" alt="Model Download Page" width="300">
+        </td>
+    </tr>
+    <tr>
+        <td>Model Load Page</td>
+        <td>Dialog Management Page</td>
+    </tr>
+    <tr>
+        <td>
+            <img src="assets/images/Model_load_page.jpg" alt="Model Load Page" width="300">
+        </td>
+        <td>
+            <img src="assets/images/Dialog_management_page.jpg" alt="Dialog Management Page" width="300">
+        </td>
+    </tr>
+</table>
+
 ## Key Features
 
 This chat demo is designed for intuitive use and powerful local AI capabilities on your device.
@@ -47,38 +78,10 @@ Create, manage, and import chat histories for organized conversations.
 *   **Import Functionality:** Import historical dialogue content from external files.
 *   **Sidebar Organization:** Chat history is conveniently saved and displayed in the left sidebar.
 
-## Project demo
-
-<!-- Use 'width' and let 'height' adjust automatically -->
-<table>
-    <tr>
-        <td>Main Interface</td>
-        <td>Model Download Page</td>
-    </tr>
-    <tr>
-        <td>
-            <img src="assets/images/Main_Interface.jpg" alt="Main Interface" width="300">
-        </td>
-        <td>
-            <img src="assets/images/Model_download_page.jpg" alt="Model Download Page" width="300">
-        </td>
-    </tr>
-    <tr>
-        <td>Model Load Page</td>
-        <td>Dialog Management Page</td>
-    </tr>
-    <tr>
-        <td>
-            <img src="assets/images/Model_load_page.jpg" alt="Model Load Page" width="300">
-        </td>
-        <td>
-            <img src="assets/images/Dialog_management_page.jpg" alt="Dialog Management Page" width="300">
-        </td>
-    </tr>
-</table>
 
 ## Project Resources
 
 *   **[Download APK](assets/32B_SM8650_Chat_Demo.apk)**
+   — This APK is optimized for running a 30B-parameter model on the SM8650 platform with 16GB RAM, enabling smooth local inference and interaction without relying on the cloud.
 *   **[Watch Detailed Demo Video (Issue #1)](https://github.com/BUPTWinsML/32B_SM8650_Chat_Demo/issues/1)**
 
