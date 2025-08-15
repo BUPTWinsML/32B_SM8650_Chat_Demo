@@ -1,0 +1,69 @@
+AntiFeatures:
+  NonFreeNet:
+    en-US: Remote models rely on Mistral, Google Gemini and OpenAI.
+Categories:
+  - Reading
+License: MIT
+AuthorName: Mobile Artificial Intelligence
+AuthorEmail: buptwins@163.com
+SourceCode: https://github.com/BUPTWinsML/32B_SM8650_Chat_Demo
+IssueTracker: https://github.com/BUPTWinsML/32B_SM8650_Chat_Demo/issues
+
+AutoName: Chat
+
+RepoType: git
+Repo: https://github.com/BUPTWinsML/32B_SM8650_Chat_Demo
+
+Builds:
+  - versionName: 1.0.0
+    versionCode: 100
+    # commit: 
+    submodules: true
+    sudo:
+      - mkdir -p /home/runner
+      - chown vagrant /home/runner
+    output: build/app/outputs/flutter-apk/app-arm64-v8a-release.apk
+    rm:
+      - linux
+      - macos
+      - windows
+    prebuild:
+      - rm packages/flutter/engine/src/.gn
+      - export repo=/home/runner/work/Chat
+      - mkdir -p $repo
+      - cd ..
+      - mv com.buptwinsml.chat $repo/Chat
+      - pushd $repo/Chat
+      - export PUB_CACHE=/home/runner/.pub-cache
+      - packages/flutter/bin/flutter config --no-analytics
+      - packages/flutter/bin/flutter packages pub get
+      - mv $PUB_CACHE .
+      - popd
+      - mv $repo/Chat com.buptwinsml.chat
+    scanignore:
+      - packages/flutter/bin/cache
+    scandelete:
+      - packages/flutter
+      - .pub-cache
+    build:
+      - export repo=/home/runner/work/Chat
+      - cd ..
+      - mv com.buptwinsml.chat $repo/Chat
+      - pushd $repo/Chat
+      - export PUB_CACHE=/home/runner/.pub-cache
+      - mv .pub-cache $PUB_CACHE
+      - packages/flutter/bin/flutter build apk --release --split-per-abi --target-platform="android-arm64"
+      - popd
+      - mv $repo/Chat com.buptwinsml.chat
+
+
+# AllowedAPKSigningKeys: 835ed22ed895c4c272d698aa6e4e48db0b4e36dccf7010d5de15034ac9e1b96f
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+VercodeOperation:
+  - '%c * 10 + 1'
+  - '%c * 10 + 2'
+UpdateCheckData: pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
+CurrentVersion: 2.0.4
+CurrentVersionCode: 22532

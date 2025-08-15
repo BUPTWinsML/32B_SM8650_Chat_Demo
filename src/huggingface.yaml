@@ -1,0 +1,28 @@
+- name: Qwen3 0.6B (bartowski)
+  repo: bartowski/Qwen_Qwen3-0.6B-GGUF
+  branch: main
+  parameters: 0.6
+  tags:
+    BF16: Qwen3-0.6B-bf16.gguf
+    Q8_0: Qwen3-0.6B-Q8_0.gguf
+    Q6_K_L: Qwen3-0.6B-Q6_K_L.gguf
+    Q5_K_L: Qwen3-0.6B-Q5_K_L.gguf
+
+- name: Qwen3 0.6B (unsloth)
+  repo: unsloth/Qwen3-0.6B-GGUF
+  branch: main
+  parameters: 0.6
+  tags:
+    Q2_K: Qwen3-0.6B-Q2_K.gguf
+    Q2_K_L: Qwen3-0.6B-Q2_K_L.gguf
+    Q3_K_M: Qwen3-0.6B-Q3_K_M.gguf
+    Q3_K_S: Qwen3-0.6B-Q3_K_S.gguf
+    Q4_0: Qwen3-0.6B-Q4_0.gguf
+    Q4_1: Qwen3-0.6B-Q4_1.gguf
+    Q4_K_M: Qwen3-0.6B-Q4_K_M.gguf
+    Q4_K_S: Qwen3-0.6B-Q4_K_S.gguf
+    Q5_K_M: Qwen3-0.6B-Q5_K_M.gguf
+    Q5_K_S: Qwen3-0.6B-Q5_K_S.gguf
+    Q6_K: Qwen3-0.6B-Q6_K.gguf
+    Q8_0: Qwen3-0.6B-Q8_0.gguf
+    BF16: Qwen3-0.6B-BF16.gguf

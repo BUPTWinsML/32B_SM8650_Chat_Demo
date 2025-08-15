@@ -1,0 +1,9 @@
+# Flutter analyzer configuration for static code analysis and linting
+
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    # Custom lint rules can be enabled/disabled here
+    # avoid_print: false
+    # prefer_single_quotes: true
