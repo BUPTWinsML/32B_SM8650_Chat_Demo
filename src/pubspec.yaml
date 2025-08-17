@@ -1,4 +1,5 @@
-name: 32B_SM8650_Chat_Demo
+# actually the package name should be 32b_xxx, yet the package name should not begin with number
+name: b32_sm8650_chat_demo
 version: 1.0.0
 description: 'This APK is optimized for running a 30B-parameter model on the SM8650 platform with 16GB RAM, enabling smooth local inference and interaction without relying on the cloud.'
 publish_to: 'none'
